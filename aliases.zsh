@@ -2,7 +2,7 @@
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+alias ll="gls -AhlFo --color --group-directories-first"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
@@ -13,17 +13,9 @@ alias version="commit 'version'"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
-
-# Laravel
-alias a="php artisan"
-alias fresh="php artisan migrate:fresh --seed"
-alias seed="php artisan db:seed"
-
-# PHP
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
+alias repo="cd $HOME/Documents/repos"
+alias monorepo="cd $HOME/Documents/repos/monorepo"
+alias infra="cd $HOME/Documents/repos/infra"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
